@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace DCC_RockPaperScissorLizardSpock
 {
-    class Computer // : Player
+    class Computer : Player
     {
+
+        public Computer () {
+        
+        }
+        public override void MakeChoice()
+        {
+
+        }
+
     }
 }

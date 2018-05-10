@@ -1,0 +1,7 @@
+C:\Users\Matthew_2\source\repos\DCC\DCC-RockPaperScissorLizardSpock\DCC-RockPaperScissorLizardSpock\bin\Debug\DCC-RockPaperScissorLizardSpock.exe.config
+C:\Users\Matthew_2\source\repos\DCC\DCC-RockPaperScissorLizardSpock\DCC-RockPaperScissorLizardSpock\bin\Debug\DCC-RockPaperScissorLizardSpock.exe
+C:\Users\Matthew_2\source\repos\DCC\DCC-RockPaperScissorLizardSpock\DCC-RockPaperScissorLizardSpock\bin\Debug\DCC-RockPaperScissorLizardSpock.pdb
+C:\Users\Matthew_2\source\repos\DCC\DCC-RockPaperScissorLizardSpock\DCC-RockPaperScissorLizardSpock\obj\Debug\DCC-RockPaperScissorLizardSpock.csprojResolveAssemblyReference.cache
+C:\Users\Matthew_2\source\repos\DCC\DCC-RockPaperScissorLizardSpock\DCC-RockPaperScissorLizardSpock\obj\Debug\DCC-RockPaperScissorLizardSpock.csproj.CoreCompileInputs.cache
+C:\Users\Matthew_2\source\repos\DCC\DCC-RockPaperScissorLizardSpock\DCC-RockPaperScissorLizardSpock\obj\Debug\DCC-RockPaperScissorLizardSpock.exe
+C:\Users\Matthew_2\source\repos\DCC\DCC-RockPaperScissorLizardSpock\DCC-RockPaperScissorLizardSpock\obj\Debug\DCC-RockPaperScissorLizardSpock.pdb

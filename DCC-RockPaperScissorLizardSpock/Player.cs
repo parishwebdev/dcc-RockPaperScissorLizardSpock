@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace DCC_RockPaperScissorLizardSpock
 {
-    class Player
+    public abstract class Player
     {
         //base class
+        string name;
+        
+        public abstract void MakeChoice(); // on user returns string and correlating int(idx) is returned, computer generates random # return as int; 
+        
+        // (selection, choices list) and list.Indexof(selection)
     }
 }
