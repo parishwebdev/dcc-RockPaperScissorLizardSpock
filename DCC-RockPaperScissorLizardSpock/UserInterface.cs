@@ -12,7 +12,7 @@ namespace DCC_RockPaperScissorLizardSpock
         {
             Console.WriteLine(param);
         }
-
+        //user interface class and input class v??
         public string GetUserChoiceInput(string choices)
         {
             Console.WriteLine("Choose: " + choices);

@@ -6,59 +6,62 @@ using System.Threading.Tasks;
 
 namespace DCC_RockPaperScissorLizardSpock
 {
-    class Game //where main or here...
+    class Game 
     {
-        Rock r;
-        Paper p;
-        Scissor sc;
-        Lizard l;
-        Spock sp;
+        User user1;
+        User user2;
+        Computer comp;
+        Random rnd;
 
-        //ui class (here?)
-        List<Choice> choices = new List<Choice>();
+        List<String> choices;
         int roundNumber;
 
 
         public Game()
         {
+            //ui to sin or multi
+            //ui for name(s) (here?)
+            rnd = new Random();
+            CreateChoices();
 
         }
 
         public void SinglePlayer()
         {
-            //new User();
-            //new Computer;
+            user1 = new User("namefromInput",choices);
+            comp = new Computer("Javis", choices,rnd);
         }
         public void MultiPlayer()
         {
-            //new User(); //differnt variable (like p1,p2)
-            //new User();
+            user1 = new User("namefromInput", choices); //differnt variable (like p1,p2)
+            user2 = new User("namefromInput", choices);
         }
         public void CreateChoices()
         {
-            r = new Rock("rock");
-            p = new Paper("paper");
-            sc = new Scissor("scissor");
-            l = new Lizard("lizard");
-            sp = new Spock("spock");
-        }
-        public void PopulateChoiceList()
-        {
-            choices.Add(r); //0
-            choices.Add(p); //1
-            choices.Add(sc); //2
-            choices.Add(sp); //3
-            choices.Add(l); //4
-        }
-        public string GetChoiceNamesAsString(){
+            choices = new List<String>();
 
+            choices.Add("rock"); //0
+            choices.Add("paper"); //1
+            choices.Add("scissor"); //2
+            choices.Add("spock"); //3
+            choices.Add("lizard"); //4
+        }
+
+        public string GetChoiceNamesAsString(List<String> choices){
+            
             string choiceNames = "";
-            foreach(Choice c in choices)
+            foreach(String c in choices)
             {
-                choiceNames +=  c.choiceName +  ", " ;
+                choiceNames +=  c[0] +  ", " ;
             }
 
             return choiceNames;
         }
+
+        public void GetRoundWinner(string c1, string c2)
+        {
+
+        }
+
     }
 }

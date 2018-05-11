@@ -9,12 +9,17 @@ namespace DCC_RockPaperScissorLizardSpock
     class User : Player
     {
 
-        public User()
+        public User(string name, List<String> choices)
         {
-
+            this.name = name;
+            this.choices = choices;
         }
 
-        public override void MakeChoice()
+        public override string MakeChoice(int numSelection)
+        {
+            return choices[2];
+        }
+        public void ConvertStringChoiceToNumSelection(string selection)
         {
 
         }
