@@ -10,6 +10,7 @@ namespace DCC_RockPaperScissorLizardSpock
     {
         //base class
         public string name;
+        public int score;
         public List<String> choices;
 
         public abstract String MakeChoice(int numSelection);

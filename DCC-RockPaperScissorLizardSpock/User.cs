@@ -17,11 +17,34 @@ namespace DCC_RockPaperScissorLizardSpock
 
         public override string MakeChoice(int numSelection)
         {
-            return choices[2];
+            return choices[numSelection];
         }
-        public void ConvertStringChoiceToNumSelection(string selection)
+        public int ConvertStringChoiceToNumSelection(string selection)
         {
+            int output = -1;
+            switch (selection)
+            {
+                case "rock":
+                    output = 0;
+                break;
+                case "paper":
+                    output = 1;
+                break;
+                case "scissor":
+                    output = 2;
+                break;
+                case "spock":
+                    output = 3;
+                break;
+                case "lizard":
+                    output = 4;
+                break;
+                default:
+                    Console.WriteLine("Wrong Selection");
+                break;
+            }
 
+            return output;
         }
     }
 }

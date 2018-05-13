@@ -15,12 +15,11 @@ namespace DCC_RockPaperScissorLizardSpock
         }
         public override string MakeChoice(int numSelection)
         {
-            return "";
+            return choices[numSelection];
         }
-        public int GenerateComNumSelection()
+        public int GenerateComNumSelection(Random rnd)
         {
-            Random rnd = new Random();
-            int comNumSelection = rnd.Next(0, 4);
+            int comNumSelection = rnd.Next(0, 5);
             return comNumSelection;
         }
 
