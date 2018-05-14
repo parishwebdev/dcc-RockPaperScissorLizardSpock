@@ -10,7 +10,6 @@ namespace DCC_RockPaperScissorLizardSpock
     {
         static void Main(string[] args)
         {
-            /*look at rubric*/
             Game g = new Game();
 
             int gametype = g.ui.GetGameTypeInput();

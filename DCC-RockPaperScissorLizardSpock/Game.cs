@@ -24,31 +24,25 @@ namespace DCC_RockPaperScissorLizardSpock
             CreateChoices();
 
         }
-
         public bool EvaluateGameType(int typeInput)
         {
             bool result = false;
 
             if (typeInput == 2)
             {
-                //MultiPlayer(user1,user2);
                  result = true;
             }
             else if (typeInput == 1)
             {
-                //SinglePlayer(user1,comp);
                  result = false;
             }
             return result;
         }
-
-        //later add param for name(s)
         public void SinglePlayer(User user1, Computer comp, string name1)
         {
             this.user1 = new User(name1,choices);
             this.comp = new Computer("Jarvis", choices,rnd);
         }
-        //later add param for name(s)
         public void MultiPlayer(User user1, User user2,string name1,string name2)
         {
             this.user1 = new User(name1, choices); 
@@ -58,13 +52,12 @@ namespace DCC_RockPaperScissorLizardSpock
         {
             choices = new List<String>();
 
-            choices.Add("rock"); //0
-            choices.Add("paper"); //1
-            choices.Add("scissor"); //2
-            choices.Add("spock"); //3
-            choices.Add("lizard"); //4
+            choices.Add("rock"); 
+            choices.Add("paper");
+            choices.Add("scissor");
+            choices.Add("spock"); 
+            choices.Add("lizard"); 
         }
-
         public string GetChoiceNamesAsString(List<String> choices){
             
             string choiceNames = "";
@@ -82,7 +75,6 @@ namespace DCC_RockPaperScissorLizardSpock
 
             return choiceNames;
         }
-
         public int CompareAnswersDiff(string c1, string c2)
         {
             int a = choices.IndexOf(c1);
@@ -122,7 +114,6 @@ namespace DCC_RockPaperScissorLizardSpock
                 ui.OutputText("\n" + p2.name + " wins the game");
             }
         }
-
 
     }
 }
